@@ -1,0 +1,26 @@
+let pizzaToppings = [a, b, c, d];
+let greetCustomer = "Welcome to Pizza House, our toppings are:" +  ${pizzaToppings} + "."
+function greetCustomer(selectTopping) {
+    let letterSelect = 0;
+    for (let i = 0; i == selectTopping.options; i++)
+}
+  //possible additional loop code?  if (selectTopping.options[i])
+function getPizzaOrder(size, crust, toppings) {
+    let size = [small, medium, large, xlarge];
+    let crust = [thin, original, thick];
+    let toppings = [a, b, c, ...z];
+    return "One large thick crust pizza with" + ${selectToppings} + "coming up!";
+}
+
+function preparePizza(aSize, aCrust, listOfToppings)
+    let aSize = large;
+    let aCrust = thick;
+    let listOfToppings = 5 * (toppings)
+    return "...Cooking pizza...";
+
+function servePizza(pizzabox) {
+    console.log("One large thick crust pizza with" +  ${selectTopping} + "... coming up!";)
+}
+
+//preparePizza uses getPizzaOrder value 
+//(getPizzaOrder|| preparePizza || servePizza)
