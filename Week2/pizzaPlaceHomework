@@ -1,0 +1,13 @@
+let pizzaPlace = "Ray Ray's Pizzaria";
+let numberOfToppings = 101;
+
+console.log(pizzaPlace, typeof pizzaPlace);
+console.log(numberOfToppings, typeof numberOfToppings);
+
+console.log(`${pizzaPlace}, it's the only place with ${numberOfToppings} toppings to choose from.`);
+
+if (numberOfToppings < 10) {
+  console.log("Quality, not quantity.")
+} else {
+  console.log("A whole lot of pizza.")
+}
