@@ -1,0 +1,66 @@
+//1. and Bonus Challenge #9
+const pizzaToppings = ["cheese", "pepperoni", "onion", "pineapple", "...mushrooms"];
+//2.Revised
+
+function greetCustomer() {
+  let greetCustomer = "Welcome to the Pizza House!";
+  console.log(`${greetCustomer}Today's toppings are:`);
+  for (let pizzaTopping of pizzaToppings) {
+    console.log(pizzaTopping)
+  };
+};
+greetCustomer();
+//3.
+let size = ["small", "medium", "large"];
+let crust = ["thick", "thin", "original"];
+let listOfToppings = ["cheese", "pepperoni", "onion", "pineapple", "bacon"]
+
+// let listOfToppings = [
+//   "cheese",
+//   "pepperoni",
+//   "onion",
+//   "pineapple",
+//   "bacon",
+//   "sausage",
+//   "jalapenos",
+//   "greenPepper",
+//   "blackOlives",
+//   "saltAndPepper",
+//   "mushrooms",
+//   ...    
+// ];
+
+function getPizzaOrder([size, crust, ...listOfToppings]) {
+ const pizza = {
+    size: size[2],
+    crust: crust[0],
+    listOfToppings: listOfToppings[0, 2, ...[4]];
+      
+  }
+  console.log(`One ${pizza.size} ${pizza.crust} crust pizza with ${pizza.pizzaToppings} ...coming up!`); 
+  return [size, crust, ...pizzaToppings];
+};
+getPizzaOrder();
+//4.
+for (const size in pizza) {
+	if (Object.hasOwnProperty.call(pizza, size)) {
+		const crust = pizza[size];
+		  for (const property in pizza) {
+		  console.log(`${property}: ${pizza[property]}`);
+		  } 
+	}
+}  
+function preparePizza([size, crust, ...pizzaToppings]) {
+  console.log("...Cooking pizza!...");
+  return [pizza.size, pizza.crust, pizza.pizzaToppings]; 
+};
+
+preparePizza();
+// 5.
+function servePizza(size, crust, pizzaTopping) {
+  console.log(`Order up! Here"s your ${pizza.size} ${pizza.crust} crust with ${pizzaToppings}. Enjoy!`);
+  return [pizza];
+};
+servePizza();
+//6.
+servePizza(preparePizza(getPizzaOrder(greetCustomer())));
