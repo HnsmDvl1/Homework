@@ -1,4 +1,4 @@
-[
+const data = [
     {
       "id": 1,
       "name": "Leanne Graham",
@@ -230,15 +230,18 @@
       }
     }
   ]
-// const newArray = [];
-// function getList (list) {
-    // newArray.push(list.phone);
+
+// const newArray = []
+// function list (num) {
+    // newArray.push(num.phone);
 // }
-// newArray.forEach((list2) => getList(list2));
+// data.forEach(nums => list(nums));
 // console.log(newArray);
-const newArray = []
-function list (num) {
-    newArray.push(num.phone);
+
+const newArray = [];
+function needs (webEmail) {
+    newArray.push(webEmail.email);
+    newArray.push(webEmail.website);
 }
-newArray.forEach(nums => list(nums));
-console.log(newArray[5]);
+data.forEach((gotWebEmail) => needs(gotWebEmail));
+console.log(newArray);

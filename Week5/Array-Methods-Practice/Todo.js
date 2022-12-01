@@ -1,4 +1,4 @@
-[
+const foreverArray = [
     {
       "userId": 1,
       "id": 1,
@@ -1188,15 +1188,35 @@
       "completed": true
     },
     {
-      "userId": 10,
-      "id": 199,
-      "title": "numquam repellendus a magnam",
-      "completed": true
+      userId: 10,
+      id: 199,
+      title: "numquam repellendus a magnam",
+      completed: true
     },
     {
-      "userId": 10,
-      "id": 200,
-      "title": "ipsam aperiam voluptates qui",
-      "completed": false
+      userId: 10,
+      id: 200,
+      title: "ipsam aperiam voluptates qui",
+      completed: false
     }
   ]
+// let nineToDo = foreverArray.map(todo => {
+    // return thisNumber.userId;
+// });
+// console.log(nineToDo);
+
+// foreverArray.map(function needs (info) {
+    // nineToDo.push(info.userId = 9)
+// })
+// const toDo = [];
+// function picky (thisNumber) {
+    // toDo.push(thisNumber.userId);
+// }
+// foreverArray.map((clueless) => picky(clueless));
+// console.log(toDo);
+
+let newArray = foreverArray.map((v, i, a) => {
+        return v === 9 ? v: v;
+});
+console.log(newArray);
+

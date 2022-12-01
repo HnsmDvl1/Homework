@@ -1,4 +1,4 @@
-[
+let users = [
     {
       "userId": 1,
       "id": 1,
@@ -600,3 +600,6 @@
       "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
     }
   ]
+let user5 = users.filter(function (user) {
+    return user.userId == 5;
+});
