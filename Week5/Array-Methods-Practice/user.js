@@ -231,17 +231,17 @@ const data = [
     }
   ]
 
-// const newArray = []
-// function list (num) {
-    // newArray.push(num.phone);
-// }
-// data.forEach(nums => list(nums));
-// console.log(newArray);
+const newArray = []
+function list (num) {
+    newArray.push(num.phone);
+}
+data.forEach(nums => list(nums));
+console.log(newArray);
 
-const newArray = [];
+const newArray2 = [];
 function needs (webEmail) {
-    newArray.push(webEmail.email);
-    newArray.push(webEmail.website);
+    newArray2.push(webEmail.email);
+    newArray2.push(webEmail.website);
 }
 data.forEach((gotWebEmail) => needs(gotWebEmail));
 console.log(newArray);

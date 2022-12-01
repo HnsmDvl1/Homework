@@ -13,7 +13,25 @@ greetCustomer();
 //3.
 let size = ["small", "medium", "large"];
 let crust = ["thick", "thin", "original"];
-let listOfToppings = ["cheese", "pepperoni", "onion", "pineapple", "bacon"]
+
+
+function getPizzaOrder([size, crust, ...listOfToppings]) {
+//let 
+ 
+ 
+function preparePizza
+  const pizza = {
+    size: size[2],
+    crust: crust[0],
+    listOfToppings: listOfToppings[0, 2, ...[4]];
+      
+  }
+  console.log(`One ${pizza.size} ${pizza.crust} crust pizza with ${pizza.pizzaToppings} ...coming up!`); 
+  return [size, crust, ...pizzaToppings];
+};
+getPizzaOrder();
+//4.
+// let listOfToppings = ["cheese", "pepperoni", "onion", "pineapple", "bacon"]
 
 // let listOfToppings = [
 //   "cheese",
@@ -30,18 +48,6 @@ let listOfToppings = ["cheese", "pepperoni", "onion", "pineapple", "bacon"]
 //   ...    
 // ];
 
-function getPizzaOrder([size, crust, ...listOfToppings]) {
- const pizza = {
-    size: size[2],
-    crust: crust[0],
-    listOfToppings: listOfToppings[0, 2, ...[4]];
-      
-  }
-  console.log(`One ${pizza.size} ${pizza.crust} crust pizza with ${pizza.pizzaToppings} ...coming up!`); 
-  return [size, crust, ...pizzaToppings];
-};
-getPizzaOrder();
-//4.
 for (const size in pizza) {
 	if (Object.hasOwnProperty.call(pizza, size)) {
 		const crust = pizza[size];
