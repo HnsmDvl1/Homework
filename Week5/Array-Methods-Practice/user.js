@@ -231,17 +231,25 @@ const data = [
     }
   ]
 
-// const newArray = []
-// function list (num) {
-    // newArray.push(num.phone);
-// }
-// data.forEach(nums => list(nums));
-// console.log(newArray);
-
-const newArray = [];
-function needs (webEmail) {
-    newArray.push(webEmail.email);
-    newArray.push(webEmail.website);
+const newArray = []
+function list (num) {
+    newArray.push(num.phone);
 }
-data.forEach((gotWebEmail) => needs(gotWebEmail));
+data.forEach(nums => list(nums));
 console.log(newArray);
+
+// const newArray2 = [];
+// function needs (webEmail) {
+//     // newArray2.push(webEmail.email);
+//     newArray2.push(webEmail.website, webEmail.email);
+// }
+// data.forEach((gotWebEmail) => needs(gotWebEmail));
+// console.log(newArray2);
+
+// data.forEach(gotwebEmail => {
+//   newArray.push(gotWebEmail.mail, gotWebEmail.website));
+// console.log(newArray2);
+// };
+
+let thisNewArray = data.map(gotWebEmail => `${gotWebEmail.email}, ${gotWebEmail.website}`);
+console.log(thisNewArray);
