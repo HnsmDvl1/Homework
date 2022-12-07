@@ -600,6 +600,9 @@ let users = [
       "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
     }
   ]
-let user5 = users.filter(function (user) {
-    return user.userId == 5;
-});
+let user5 = users.filter(user => user.userId === 5);
+  console.log(user5);
+
+
+let pairs = user5.map(user => `${user.title}, ${user.body}`);
+  console.log(pairs);

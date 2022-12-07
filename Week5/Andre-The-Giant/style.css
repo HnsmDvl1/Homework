@@ -1,7 +1,19 @@
-@media screen {
-  max-width: 400px;
-  padding: 20px;     
-}
+@media (max-width: 375px) {
+  .proCareer {
+    border-image-width: auto;
+  }
+  div {
+    margin: 10px 0px 10px 10px
+  }
+
+  img {
+    align-self: center;
+  } 
+  h1{
+    font-size: 30px;
+  } 
+  
+  }
 html {
     background-color: antiquewhite;
   }
@@ -33,10 +45,10 @@ html {
   }
   #bio > li {
     list-style-type: none;
-    padding: 2px;
+    padding-left: 2em ;
   }
   
-  .pro {
+  .proCareer {
     width: auto;
   }
   .achievments > li {

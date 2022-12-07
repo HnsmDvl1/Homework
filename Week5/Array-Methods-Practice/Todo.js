@@ -1219,9 +1219,14 @@ const foreverArray = [
 //         return v 
 // });
 // console.log(newArray);
-let id9 = foreverArray.map((val, i, arr) => {
-  return {
-    value: userId
-  }
-});
-console.log(id9);
+// let id9 = foreverArray.map((val, i, arr) => {
+//   return {
+//     value: userId
+// let newArray = foreverArray.filter(v => v.userId === 9);
+// console.log(newArray);
+
+let toDo = foreverArray.filter(task => task.userId === 9);
+  console.log(toDo);
+
+let mustDo = toDo.filter(task => task.completed === false);
+  console.log(mustDo.length + 1);

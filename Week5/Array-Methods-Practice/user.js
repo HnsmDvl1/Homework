@@ -238,10 +238,18 @@ function list (num) {
 data.forEach(nums => list(nums));
 console.log(newArray);
 
-const newArray2 = [];
-function needs (webEmail) {
-    newArray2.push(webEmail.email);
-    newArray2.push(webEmail.website);
-}
-data.forEach((gotWebEmail) => needs(gotWebEmail));
-console.log(newArray);
+// const newArray2 = [];
+// function needs (webEmail) {
+//     // newArray2.push(webEmail.email);
+//     newArray2.push(webEmail.website, webEmail.email);
+// }
+// data.forEach((gotWebEmail) => needs(gotWebEmail));
+// console.log(newArray2);
+
+// data.forEach(gotwebEmail => {
+//   newArray.push(gotWebEmail.mail, gotWebEmail.website));
+// console.log(newArray2);
+// };
+
+let thisNewArray = data.map(gotWebEmail => `${gotWebEmail.email}, ${gotWebEmail.website}`);
+console.log(thisNewArray);
